@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Kashmir Holidays</title>
+    <title>Contact Us | iTravel Kashmir Holiday Packages</title>
+    <meta name="description" content="Contact iTravel for the best Kashmir holiday packages. Local experts at Hotel Pride Inn, Rajbagh, Srinagar.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -12,8 +13,11 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
         .bg-primary-custom { background-color: var(--primary); }
         .text-accent { color: var(--accent); }
-        .btn-accent { background-color: var(--accent); color: white; border: none; }
-        .contact-form { border-radius: 20px; border: none; box-shadow: 0 10px 40px rgba(0,0,0,0.05); }
+        .btn-accent { background-color: var(--accent); color: white; border: none; transition: 0.3s; }
+        .btn-accent:hover { background-color: #d97706; transform: translateY(-2px); }
+        .contact-card { border-radius: 2rem; border: none; box-shadow: 0 15px 50px rgba(0,0,0,0.05); background: #fff; }
+        .form-control { padding: 0.8rem 1.2rem; border-radius: 1rem; border: 1px solid #e2e8f0; background: #f8fafc; }
+        .form-control:focus { box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2); border-color: var(--accent); }
     </style>
 </head>
 <body>
@@ -24,53 +28,56 @@
     </nav>
 
     <div class="bg-primary-custom text-white py-5 text-center">
-        <h1 class="display-4 font-serif">Plan Your Dream Trip</h1>
-        <p class="lead">Our travel experts are just a message away.</p>
+        <h1 class="display-4 fw-bold font-serif">Let's Plan Your Kashmir Adventure</h1>
+        <p class="lead opacity-75">Connect with our local travel experts today</p>
     </div>
 
     <main class="container py-5">
-        <div class="row g-5">
+        <div class="row g-5 align-items-center">
             <div class="col-md-5">
-                <div class="h-100 d-flex flex-column justify-content-center">
-                    <h2 class="fw-bold mb-4 font-serif">Reach Out Directly</h2>
+                <div class="p-4 p-lg-5">
+                    <h2 class="fw-bold mb-4 font-serif text-primary">Our Srinagar Office</h2>
                     <div class="mb-4 d-flex align-items-center">
-                        <div class="bg-emerald-100 p-3 rounded-circle me-3"><i class="fas fa-phone text-success fs-4"></i></div>
-                        <div><p class="fw-bold mb-0">Call/WhatsApp</p><p class="text-muted mb-0">+917006523990</p></div>
+                        <div class="bg-emerald-100 p-3 rounded-circle me-3 text-success"><i class="fas fa-map-marker-alt fs-4"></i></div>
+                        <div><p class="fw-bold mb-0">Visit Us</p><p class="text-muted mb-0 small">iTravel, Hotel Pride Inn, Rajbagh, Srinagar 190001</p></div>
                     </div>
                     <div class="mb-4 d-flex align-items-center">
-                        <div class="bg-emerald-100 p-3 rounded-circle me-3"><i class="fas fa-envelope text-success fs-4"></i></div>
-                        <div><p class="fw-bold mb-0">Email</p><p class="text-muted mb-0">info@kashmirholidaypackage.com</p></div>
+                        <div class="bg-emerald-100 p-3 rounded-circle me-3 text-success"><i class="fas fa-phone-alt fs-4"></i></div>
+                        <div><p class="fw-bold mb-0">Call / WhatsApp</p><p class="text-muted mb-0 small">+917006523990</p></div>
                     </div>
                     <div class="mb-4 d-flex align-items-center">
-                        <div class="bg-emerald-100 p-3 rounded-circle me-3"><i class="fas fa-map-marker-alt text-success fs-4"></i></div>
-                        <div><p class="fw-bold mb-0">Visit Us</p><p class="text-muted mb-0">iTravel, Hotel Pride Inn, Rajbagh, Srinagar 190001, J&K</p></div>
+                        <div class="bg-emerald-100 p-3 rounded-circle me-3 text-success"><i class="fas fa-envelope fs-4"></i></div>
+                        <div><p class="fw-bold mb-0">Official Email</p><p class="text-muted mb-0 small text-break">info@kashmirholidaypackage.com</p></div>
+                    </div>
+                    <div class="mt-5">
+                        <a href="https://wa.me/917006523990" class="btn btn-success w-100 py-3 rounded-pill fw-bold shadow-sm"><i class="fab fa-whatsapp me-2"></i> Instant Support</a>
                     </div>
                 </div>
             </div>
             
             <div class="col-md-7">
-                <div class="card contact-form p-4 p-lg-5">
-                    <h3 class="fw-bold mb-4">Send Us a Message</h3>
+                <div class="card contact-card p-4 p-lg-5">
+                    <h3 class="fw-bold mb-4 text-center">Inquiry Form</h3>
                     <form action="https://formspree.io/f/info@kashmirholidaypackage.com" method="POST">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label class="form-label small fw-bold">Full Name</label>
-                                <input type="text" name="name" class="form-control form-control-lg bg-light border-0" required>
+                                <input type="text" name="name" class="form-control" placeholder="e.g. John Doe" required>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label small fw-bold">Phone Number</label>
-                                <input type="tel" name="phone" class="form-control form-control-lg bg-light border-0" required>
+                                <input type="tel" name="phone" class="form-control" placeholder="e.g. +91 70065..." required>
                             </div>
                             <div class="col-12">
-                                <label class="form-label small fw-bold">Email</label>
-                                <input type="email" name="email" class="form-control form-control-lg bg-light border-0" required>
+                                <label class="form-label small fw-bold">Email ID</label>
+                                <input type="email" name="email" class="form-control" placeholder="john@example.com" required>
                             </div>
                             <div class="col-12">
-                                <label class="form-label small fw-bold">Message</label>
-                                <textarea name="message" class="form-control form-control-lg bg-light border-0" rows="5"></textarea>
+                                <label class="form-label small fw-bold">Your Message</label>
+                                <textarea name="message" class="form-control" rows="5" placeholder="Tell us about your travel plans..."></textarea>
                             </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-accent w-100 py-3 rounded-pill fw-bold fs-5">Submit Request</button>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-accent w-100 py-3 rounded-pill fw-bold fs-5 shadow">Send My Message</button>
                             </div>
                         </div>
                     </form>
@@ -80,7 +87,7 @@
     </main>
 
     <footer class="bg-primary-custom text-white py-4 text-center mt-5">
-        <p class="mb-0">&copy; 2026 Kashmir Holiday Packages</p>
+        <p class="mb-0 small">&copy; 2026 iTravel. All rights reserved.</p>
     </footer>
 
     <a href="https://wa.me/917006523990" class="whatsapp-btn" style="position: fixed; bottom: 30px; right: 30px; background-color: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; z-index: 1000; text-decoration: none;">

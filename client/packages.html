@@ -3,176 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Tour Packages | Kashmir Holidays</title>
-    <meta name="description" content="Explore our complete range of Kashmir tour packages. From honeymoon specials to family vacations and adventure trips.">
-    
-    <!-- Bootstrap CSS -->
+    <title>All Kashmir Tour Packages | Best Deals 2026 - iTravel</title>
+    <meta name="description" content="Explore all Kashmir tour packages. Honeymoon, family, and group tours available at best prices. Srinagar, Gulmarg & more.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
     <style>
         :root { --primary: #064e3b; --accent: #f59e0b; --light-bg: #f8fafc; }
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--light-bg); }
-        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
         .bg-primary-custom { background-color: var(--primary); }
         .text-accent { color: var(--accent); }
-        .btn-accent { background-color: var(--accent); color: white; border: none; }
-        .package-card { border: none; border-radius: 15px; overflow: hidden; transition: transform 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .package-card:hover { transform: translateY(-10px); }
-        .package-img { height: 220px; object-fit: cover; }
+        .btn-accent { background-color: var(--accent); color: white; border: none; transition: 0.3s; }
+        .btn-accent:hover { background-color: #d97706; transform: translateY(-2px); }
+        .booking-card { border-radius: 20px; border: none; box-shadow: 0 10px 40px rgba(0,0,0,0.08); background: #fff; }
+        .form-label { font-size: 0.85rem; font-weight: 700; color: #4a5568; margin-bottom: 0.4rem; }
+        .form-control { padding: 0.7rem 1rem; border-radius: 0.8rem; border: 1px solid #e2e8f0; background: #f8fafc; }
+        .form-control:focus { box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2); border-color: var(--accent); }
         .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; background-color: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; z-index: 1000; text-decoration: none; }
     </style>
 </head>
 <body>
-
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom sticky-top py-3">
         <div class="container">
             <a class="navbar-brand fw-bold fs-3" href="index.html">Kashmir<span class="text-accent">Holidays</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-lg-4">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Packages</a>
-                        <ul class="dropdown-menu border-0 shadow-sm">
-                            <li><a class="dropdown-item" href="packages.html">All Packages</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="kashmir-honeymoon-packages.html">Honeymoon Packages</a></li>
-                            <li><a class="dropdown-item" href="kashmir-family-tour-packages.html">Family Packages</a></li>
-                            <li><a class="dropdown-item" href="kashmir-tour-packages-from-delhi.html">From Delhi</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="gulmarg-tour-packages.html">Gulmarg Specials</a></li>
-                            <li><a class="dropdown-item" href="pahalgam-tour-packages.html">Pahalgam Specials</a></li>
-                            <li><a class="dropdown-item" href="srinagar-tour-packages.html">Srinagar Specials</a></li>
-                            <li><a class="dropdown-item" href="sonmarg-tour-packages.html">Sonmarg Specials</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    <li class="nav-item"><a class="btn btn-accent px-4 rounded-pill" href="contact.html">Plan My Trip</a></li>
-                </ul>
+            <div class="ms-auto">
+                <a class="btn btn-accent px-4 rounded-pill" href="contact.html">Plan My Trip</a>
             </div>
         </div>
     </nav>
 
-    <!-- Header -->
     <div class="bg-primary-custom text-white py-5 text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Kashmir Tour Packages</h1>
-            <p class="lead opacity-75">Curated experiences for every type of traveler</p>
-        </div>
+        <h1 class="display-4 fw-bold">Premium Kashmir Holiday Packages</h1>
+        <p class="lead opacity-75">Meticulously crafted itineraries for an unforgettable journey</p>
     </div>
 
-    <!-- Main Content -->
     <main class="container py-5">
-        <div class="row g-4">
-            <!-- Pkg 1 -->
-            <div class="col-md-4">
-                <div class="card package-card h-100">
-                    <img src="assets/snowy_gulmarg_mountains_landscape.png" class="package-img card-img-top" alt="Gulmarg">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold">Gulmarg Winter Special</h3>
-                        <p class="text-accent fw-bold mb-2">₹18,500 / Person</p>
-                        <p class="text-muted small mb-4">5 Days / 4 Nights • Skiing & Gondola</p>
-                        <a href="gulmarg-tour-packages.html" class="btn btn-outline-primary w-100 py-2 border-emerald-900 text-emerald-900">View Details</a>
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <!-- SEO Rich Content -->
+                <div class="mb-5">
+                    <h2 class="h3 fw-bold text-dark mb-4">Discover the Magic of Kashmir with iTravel</h2>
+                    <p class="text-muted">Our <strong>Kashmir tour packages</strong> are designed to offer you the ultimate comfort and authentic local experiences. Whether you are looking for <strong>budget Kashmir tour packages</strong> or <strong>luxury houseboat stays in Srinagar</strong>, our diverse range of options ensures that your trip to the 'Paradise on Earth' is exactly how you imagined it.</p>
+                    <p class="text-muted">Key highlights of our packages include <strong>Gondola rides in Gulmarg</strong>, serene walks through <strong>Mughal Gardens</strong>, and tranquil moments by the <strong>Lidder River in Pahalgam</strong>. All our tours are led by expert local guides who bring the history and culture of the valley to life.</p>
+                </div>
+                
+                <div class="row g-4 mb-5">
+                    <!-- Package Card 1 -->
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="assets/luxury_houseboat_interior_bedroom.png" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Srinagar Houseboat Stay">
+                            <div class="card-body p-4 text-center">
+                                <h3 class="h5 fw-bold mb-2">Magical Winter Special</h3>
+                                <p class="text-accent fw-bold mb-3">₹18,500 / Person</p>
+                                <a href="gulmarg-tour-packages.html" class="btn btn-outline-primary-custom border-emerald-900 text-emerald-900 w-100 rounded-pill">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Package Card 2 -->
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="assets/lush_pahalgam_valley_landscape.png" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Pahalgam Valley Tour">
+                            <div class="card-body p-4 text-center">
+                                <h3 class="h5 fw-bold mb-2">Valley of Shepherds</h3>
+                                <p class="text-accent fw-bold mb-3">₹15,500 / Person</p>
+                                <a href="pahalgam-tour-packages.html" class="btn btn-outline-primary-custom border-emerald-900 text-emerald-900 w-100 rounded-pill">View Details</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Pkg 2 -->
-            <div class="col-md-4">
-                <div class="card package-card h-100">
-                    <img src="assets/lush_pahalgam_valley_landscape.png" class="package-img card-img-top" alt="Pahalgam">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold">Pahalgam Valley Retreat</h3>
-                        <p class="text-accent fw-bold mb-2">₹15,500 / Person</p>
-                        <p class="text-muted small mb-4">4 Days / 3 Nights • Nature & Serenity</p>
-                        <a href="pahalgam-tour-packages.html" class="btn btn-outline-primary w-100 py-2 border-emerald-900 text-emerald-900">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Pkg 3 -->
-            <div class="col-md-4">
-                <div class="card package-card h-100">
-                    <img src="assets/luxury_houseboat_interior_bedroom.png" class="package-img card-img-top" alt="Srinagar">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold">Srinagar Houseboat Stay</h3>
-                        <p class="text-accent fw-bold mb-2">₹12,000 / Person</p>
-                        <p class="text-muted small mb-4">3 Days / 2 Nights • Dal Lake Experience</p>
-                        <a href="srinagar-tour-packages.html" class="btn btn-outline-primary w-100 py-2 border-emerald-900 text-emerald-900">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Pkg 4 -->
-            <div class="col-md-4">
-                <div class="card package-card h-100">
-                    <img src="assets/luxury_kashmiri_houseboat_interior.png" class="package-img card-img-top" alt="Honeymoon">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold">Romantic Honeymoon Package</h3>
-                        <p class="text-accent fw-bold mb-2">₹25,000 / Couple</p>
-                        <p class="text-muted small mb-4">6 Days / 5 Nights • Private Shikara & Dinners</p>
-                        <a href="kashmir-honeymoon-packages.html" class="btn btn-outline-primary w-100 py-2 border-emerald-900 text-emerald-900">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Pkg 5 -->
-            <div class="col-md-4">
-                <div class="card package-card h-100">
-                    <img src="assets/lush_green_pahalgam_valley_with_river.png" class="package-img card-img-top" alt="Family">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold">Family Fun Tour</h3>
-                        <p class="text-accent fw-bold mb-2">₹45,000 / Family</p>
-                        <p class="text-muted small mb-4">7 Days / 6 Nights • Kid-friendly Activities</p>
-                        <a href="kashmir-family-tour-packages.html" class="btn btn-outline-primary w-100 py-2 border-emerald-900 text-emerald-900">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Pkg 6 -->
-            <div class="col-md-4">
-                <div class="card package-card h-100">
-                    <img src="assets/cinematic_dal_lake_sunset_landscape.png" class="package-img card-img-top" alt="Delhi">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold">Kashmir from Delhi (with Flights)</h3>
-                        <p class="text-accent fw-bold mb-2">₹22,000 / Person</p>
-                        <p class="text-muted small mb-4">5 Days / 4 Nights • All-inclusive</p>
-                        <a href="kashmir-tour-packages-from-delhi.html" class="btn btn-outline-primary w-100 py-2 border-emerald-900 text-emerald-900">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Pkg 7 -->
-            <div class="col-md-4">
-                <div class="card package-card h-100">
-                    <img src="assets/sonmarg_meadow_with_glaciers.png" class="package-img card-img-top" alt="Sonmarg">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold">Sonmarg Glacier Expedition</h3>
-                        <p class="text-accent fw-bold mb-2">₹14,500 / Person</p>
-                        <p class="text-muted small mb-4">4 Days / 3 Nights • Thajiwas Glacier</p>
-                        <a href="sonmarg-tour-packages.html" class="btn btn-outline-primary w-100 py-2 border-emerald-900 text-emerald-900">View Details</a>
+
+            <!-- Enhanced Booking Sidebar -->
+            <div class="col-lg-4">
+                <div class="card booking-card sticky-top" style="top: 100px;">
+                    <div class="card-body p-4">
+                        <h3 class="h4 fw-bold mb-4 text-primary text-center">Plan Your Trip</h3>
+                        <form action="https://formspree.io/f/info@kashmirholidaypackage.com" method="POST">
+                            <div class="mb-3">
+                                <label class="form-label">Choose Package</label>
+                                <select name="package" class="form-control" required>
+                                    <option value="">Select a package...</option>
+                                    <option value="Honeymoon Special">Honeymoon Special</option>
+                                    <option value="Family Tour">Family Tour</option>
+                                    <option value="Gulmarg Adventure">Gulmarg Adventure</option>
+                                    <option value="Srinagar City Tour">Srinagar City Tour</option>
+                                    <option value="Pahalgam Retreat">Pahalgam Retreat</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" name="email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                            <div class="row g-2 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Travel Date</label>
+                                    <input type="date" name="travel_date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">No. of Guests</label>
+                                    <input type="number" name="guests" class="form-control" placeholder="1" min="1" required>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Any Special Requests?</label>
+                                <textarea name="message" class="form-control" rows="3" placeholder="Dietary needs, room preference etc."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-accent w-100 py-3 fw-bold rounded-pill shadow-sm">Send Inquiry</button>
+                        </form>
+                        <hr class="my-4 opacity-10">
+                        <p class="text-center small text-muted mb-3">Quick support via WhatsApp</p>
+                        <a href="https://wa.me/917006523990" class="btn btn-outline-success w-100 rounded-pill"><i class="fab fa-whatsapp me-2"></i> Chat with Expert</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-primary-custom text-white py-5">
-        <div class="container text-center">
-            <h2 class="h4 text-accent mb-4 font-serif">Kashmir Holidays</h2>
-            <p class="opacity-75 mb-4">Your local partner for exploring Paradise on Earth.</p>
-            <p class="small opacity-50">&copy; 2026 iTravel. All rights reserved.</p>
-        </div>
+    <footer class="bg-primary-custom text-white py-4 text-center mt-5">
+        <p class="mb-0 small">&copy; 2026 iTravel. All rights reserved.</p>
     </footer>
 
-    <!-- Floating WhatsApp -->
     <a href="https://wa.me/917006523990" class="whatsapp-btn" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <!-- Bootstrap JS -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
