@@ -10,9 +10,12 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Hero />
       
-      {/* Features Section */}
-      <section className="py-16 bg-white">
+      {/* Features Section - Semantic SEO */}
+      <section className="py-16 bg-white" aria-label="Our Service Features">
         <div className="container mx-auto px-4">
+          <header className="sr-only">
+            <h2>Why Book Your Kashmir Tour With Us</h2>
+          </header>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="p-6 rounded-lg bg-secondary/30 flex flex-col items-center">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 text-accent">

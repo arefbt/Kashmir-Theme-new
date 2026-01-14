@@ -10,8 +10,32 @@ export default function PackageDetail() {
 
   if (!pkg) return <NotFound />;
 
+  // Update document title for SEO
+  if (typeof document !== 'undefined') {
+    document.title = `${pkg.title} | Kashmir Holiday Packages`;
+  }
+
   return (
     <div className="min-h-screen bg-secondary/10 pb-20">
+      {/* Structured Data for SEO */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": pkg.title,
+          "description": pkg.description,
+          "brand": {
+            "@type": "Brand",
+            "name": "Kashmir Holiday Packages"
+          },
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "INR",
+            "price": pkg.price,
+            "availability": "https://schema.org/InStock"
+          }
+        })}
+      </script>
       {/* Header Image */}
       <div className="relative h-[60vh] min-h-[400px]">
         <img src={pkg.image} alt={pkg.title} className="w-full h-full object-cover" />
