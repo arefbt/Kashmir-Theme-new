@@ -1,0 +1,179 @@
+You are a senior frontend engineer and SEO architect.
+
+Build a 100% static, production-ready travel website for:
+
+kashmirholidaypackage.com
+
+This project must be:
+
+- Completely FREE to run on Replit
+- No backend
+- No database
+- No admin panel
+- No server-side API
+- Only static site generation (SSG)
+
+================================================
+TECH STACK
+================================================
+
+Frontend:
+- Next.js 15+ (App Router)
+- Static Site Generation (SSG)
+- Tailwind CSS
+- Mobile-first
+- SEO optimized
+- Fast loading
+- Exportable as static HTML (next build + next export)
+
+================================================
+STATIC WEBSITE PAGES
+================================================
+
+Generate these pages as static HTML:
+
+Homepage (target keyword: "Kashmir Holiday Packages")
+Include:
+- Hero section
+- Packages section
+- Destinations section
+- Testimonials
+- CTA
+- FAQ
+- Footer
+
+Other pages:
+
+/kashmir-honeymoon-packages  
+/kashmir-family-tour-packages  
+/kashmir-tour-packages-from-delhi  
+/gulmarg-tour-packages  
+/pahalgam-tour-packages  
+/srinagar-tour-packages  
+/sonmarg-tour-packages  
+/about-us  
+/contact-us  
+/privacy-policy  
+/terms-and-conditions  
+/blog  
+/packages  
+/package/[slug]  
+/destination/[slug]  
+
+Use local JSON files for data:
+
+/data/packages.json  
+/data/destinations.json  
+/data/blog.json  
+
+================================================
+SEO REQUIREMENTS (VERY IMPORTANT)
+================================================
+
+Each page must include:
+
+- Dynamic meta title
+- Meta description
+- Focus keyword usage
+- OpenGraph tags
+- Twitter card tags
+- Schema.org JSON-LD
+- Breadcrumb schema
+- Proper image alt tags
+- Internal linking
+
+Create reusable SEO component.
+
+================================================
+SITEMAP & ROBOTS
+================================================
+
+Auto-generate:
+
+- /sitemap.xml
+- /robots.txt
+
+During static build.
+
+================================================
+CONTACT FORM (STATIC)
+
+Create a contact form that uses:
+
+- Formspree OR Getform OR Netlify Forms (free service)
+- No backend required
+- Send submissions to:
+
+info@kashmirholidaypackage.com
+
+Add WhatsApp chat button (floating).
+
+================================================
+ANALYTICS (OPTIONAL)
+
+Add support for:
+
+- Google Analytics 4
+- Google Tag Manager
+
+Loaded only if environment variable is present.
+
+================================================
+PERFORMANCE
+
+- Image optimization using next/image
+- Lazy loading
+- Code splitting
+- Minimal JS
+- Optimized fonts
+
+================================================
+PROJECT STRUCTURE
+
+/app
+/components
+/data
+/public
+/styles
+/lib/seo.ts
+
+================================================
+SEO DEFAULTS (HOMEPAGE)
+
+Title:
+Kashmir Holiday Packages | Best Kashmir Tour Packages 2026
+
+Meta description:
+Book Kashmir holiday packages with local experts. Srinagar, Gulmarg, Pahalgam & Sonmarg tours with hotels, houseboats & sightseeing.
+
+H1:
+Best Kashmir Holiday Packages with Local Travel Experts
+
+================================================
+DEPLOYMENT OUTPUT
+
+Provide:
+
+1. Full project source code
+2. Folder structure
+3. Example JSON data
+4. SEO component
+5. Schema generator
+6. Sitemap generator
+7. robots.txt generator
+8. Tailwind UI layout
+9. Replit run instructions
+10. VPS static hosting guide (Nginx)
+
+================================================
+IMPORTANT RULES
+
+- Static only
+- No backend
+- No admin panel
+- No paid services
+- SEO optimized for Indian travel keywords
+- Production ready
+- Clean code
+
+Start by generating the full project structure and code.
